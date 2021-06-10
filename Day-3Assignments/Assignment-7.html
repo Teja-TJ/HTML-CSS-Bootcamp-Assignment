@@ -1,0 +1,66 @@
+<!--reads input from radio, checkbox which display the selected data in separate paragraphs-->
+<!doctype>
+	<html>
+	<head>
+		<title>Display data from Radio,checkbox</title>
+	</head>
+	<body>
+		<form>
+			<br/>
+
+			<label for="gender">Gender</label><br/>
+			<input type="radio" name="gender" id="gender" value="male">Male<br/>
+			<input type="radio" name="gender" id="gender" value="female">Female<br/>
+			<button  type="button" onclick="displayRadioValue()">submit</button><br/><br/>
+            <p id="result"></p>
+
+			<br/>
+
+			<input type="checkbox" id="cricket"  value="cricket"/>  
+			<label for="cricket">Cricket</label> <br>
+			<input type="checkbox" id="football"value="football"/>  
+			<label for="football">Football</label> <br> 
+
+			<button type="button" onclick="check()">Button</button><br/><br/>
+			<p1 id="man"></p1>
+
+    <script>
+        function displayRadioValue() {
+            var ele = document.getElementsByName('gender');
+
+
+            for( var i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                	document.getElementById("result").innerHTML
+                        = "female";
+                else 
+                	document.getElementById("result").innerHTML
+                        = "male";
+
+            }
+
+        }
+    </script>
+    <script>
+
+
+    	function check(){
+    		var cricket=document.getElementById('cricket');
+            var football=document.getElementById('football');
+            var res;
+
+          if(cricket.checked == true && football.checked == true){
+          res='cricket, football';
+          }else if(cricket.checked == false && football.checked == true){
+          res='football only';
+          }else if(cricket.checked == true && football.checked == false){
+          res='cricket only';
+          }else{
+          res='None';
+          }
+          document.getElementById('man').innerHTML=res;
+        }  
+
+   </script>
+  </form>
+</body>

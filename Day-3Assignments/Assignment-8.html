@@ -1,0 +1,36 @@
+<!--reads from the 
+data list through the select tag and display the data in the paragraph -->
+<!DOCTYPE html>
+<html>
+   <head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+	  p {
+			color: red;
+		}
+	</style>
+  </head>
+  <body>
+    <label>Choose your Birth year</label>
+    <select id="studies">
+    	     <option>--select--</option>
+    	     <option>1997</option>
+    	     <option>1998</option>
+    	     <option>1999</option>
+    	     <option>2000</option>
+    	     <option>2001</option>
+    	     <option>2002t</option>
+    </select>
+    <button onclick="readData()">submit</button>
+    <p id="result"></p>
+    <script>
+    	function readData() {
+    		var c=document.getElementById('studies').value;
+
+    		document.getElementById('result').innerHTML=c;
+
+    	}
+    </script>
+    </body>
+</html>
