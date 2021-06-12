@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TO add details into database</title>
+</head>
+<body>
+	<h1>Contact details</h1>
+	<form action="/finaldb/Assignment-7.php" method="POST"
+	target="_blank">
+		<label style="color:red" "font-size: 30px;">Enter your name:</label>
+		<input type="text" name="name" placeholder="enter name" id="name"/>
+		<br/><br/>
+		<label style="color:red" "font-size: 30px;">Enter your name:</label>
+		<input type="email" name="emailid" placeholder="enter email id" id="emailid"/>
+		<br/><br/>
+		<input type="submit" />
+	</form>
+	<script>
+		function getData() {
+			var name=document.getElementById('name').value;
+			var emailid=document.getElementById('emailid').value;
+
+			var dataString='Name:' + name + 'Emailid:' + emailid ;
+			document.getElementById('result').innerHTML=dataString;
+		}
+	</script>
+</body>
+</html>
