@@ -1,0 +1,41 @@
+<!-- To highlight the paragraphs in div tag using child selector -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Child Selector</title>
+<style>
+			body > p,section{
+				text-align: center;
+				color: black;
+				background: yellowgreen;
+			}
+			p,h2{
+				text-align: center;
+			}
+		</style>
+</head>
+<body>
+	<h2 style="color:red;">Child Selector</h2>
+	<p>
+		Quam pellentesque nec nam aliquam sem et tortor.  
+	</p>
+			<div>
+				<p>
+					Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget.
+				</p>
+				<section>
+			  <p>
+				Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget.
+			  </p>
+			  </section>
+				<p>
+				 Posuere sollicitudin aliquam ultrices sagittis. 
+			   </p>
+
+			</div>
+	<p>
+			 Massa enim nec dui nunc mattis enim. 
+	</p>
+
+	</body>
+</html>

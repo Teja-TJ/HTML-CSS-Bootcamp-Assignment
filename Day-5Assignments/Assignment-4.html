@@ -1,0 +1,35 @@
+<!-- To highlight the paragraphs in div tag using general sibling selector -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>General Sibling</title>
+	<style>
+		div ~ p,section{
+			text-align: center;
+			color: white;
+			background-color: green;
+		}
+	</style>
+
+</head>
+<body>
+	<h2 style="text-align:center">General Sibling</h2>
+	<p style="text-align:center"> Egestas purus viverra accumsan in nisl.</p>
+	<div style="text-align: center;">
+		<section>
+		<p>
+				Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget.
+			  </p>
+		<p> Quam id leo in vitae turpis massa sed elementum tempus.</p>
+		</section>
+		<p> Quam id leo in vitae turpis massa sed elementum tempus.</p>
+		 <p>Quam id leo in vitae turpis massa sed elementum tempus. Egestas purus viverra accumsan in nisl.
+		 	</p>
+	</div>
+	<p> Quam id leo in vitae turpis massa sed elementum tempus.</p>
+		 <p>Quam id leo in vitae turpis massa sed elementum tempus. Egestas purus viverra accumsan in nisl.
+		 	</p>
+
+</body>
+</html>
